@@ -1,5 +1,5 @@
 import pytest
-import src.core as core
+import core as core
 
 
 def test_myFunction():

@@ -10,3 +10,6 @@ version = "1.0.3rc"
 addopts = [
     "--import-mode=importlib",
 ]
+pythonpath = [
+  "src"
+]

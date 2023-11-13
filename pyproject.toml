@@ -8,7 +8,7 @@ packages = [
 
 [project]
 name = "testRepo"
-version = "1.0.3rc"
+version = "1.0.3"
 
 [tool.pytest.ini_options]
 addopts = [

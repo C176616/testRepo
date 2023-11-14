@@ -13,21 +13,21 @@ permissions:
   contents: read
 
 jobs:
-  container-test:
-    runs-on: ubuntu-latest
-    container: 
-      image: thekevster08/mysocket_server:tagname
-      ports:
-        - 8080
-    steps:
-      # - name: login
-      #   # run: docker login --username kevin.collins@outlook.com --password-stdin
-      #   run: echo its loggin in
-      - name: run container
-        # run: docker run
-        run: |
-          echo its running
-          (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
+  # container-test:
+  #   runs-on: ubuntu-latest
+  #   container: 
+  #     image: thekevster08/mysocket_server:tagname
+  #     ports:
+  #       - 8080
+  #   steps:
+  #     # - name: login
+  #     #   # run: docker login --username kevin.collins@outlook.com --password-stdin
+  #     #   run: echo its loggin in
+  #     - name: run container
+  #       # run: docker run
+  #       run: |
+  #         echo its running
+  #         (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
 
   build:
     runs-on: ubuntu-latest

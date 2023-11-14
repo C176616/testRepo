@@ -34,6 +34,8 @@ jobs:
     services:
       socketserver:
         image: thekevster08/mysocket_server:tagname
+        ports:
+          - 8080:8080
     strategy:
       matrix:
         python-version: ["3.11", "3.12"]

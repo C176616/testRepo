@@ -16,7 +16,7 @@ jobs:
   container-test:
     runs-on: ubuntu-latest
     container: 
-      image: thekevster08/mysocket_server
+      image: thekevster08/mysocket_server:tagname
     steps:
       - name: login
         run: docker login --username kevin.collins@outlook.com --password-stdin

@@ -2,6 +2,7 @@ import core
 
 
 def main():
+    core.make_client()
     print(core.make_client())
 
 

@@ -18,6 +18,8 @@ jobs:
     container: 
       image: thekevster08/mysocket_server
     steps:
+      - name: login
+        run: docker login --username kevin.collins@outlook.com --password-stdin
       - name: run container
         run: docker run
 
@@ -26,7 +28,6 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.11", "3.12"]
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}

@@ -3,5 +3,5 @@ import core
 
 
 def test_myFunction():
-    result = core.myFunction()
+    result = core.make_client()
     assert result == "Hello world!"

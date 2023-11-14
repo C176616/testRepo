@@ -13,8 +13,15 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  container-test:
+    runs-on: ubuntu-latest
+    container: 
+      image: thekevster08/mysocket_server
+    steps:
+      - name: run container
+        run: docker run
 
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:

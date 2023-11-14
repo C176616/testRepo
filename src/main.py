@@ -2,7 +2,7 @@ import core
 
 
 def main():
-    print(core.myFunction())
+    print(core.make_client())
 
 
 if __name__ == "__main__":

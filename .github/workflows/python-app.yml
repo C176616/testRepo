@@ -31,9 +31,13 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    services:
+      socketserver:
+        image: thekevster08/mysocket_server:tagname
     strategy:
       matrix:
         python-version: ["3.11", "3.12"]
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}

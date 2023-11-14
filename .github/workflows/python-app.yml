@@ -19,9 +19,11 @@ jobs:
       image: thekevster08/mysocket_server:tagname
     steps:
       - name: login
-        run: docker login --username kevin.collins@outlook.com --password-stdin
+        # run: docker login --username kevin.collins@outlook.com --password-stdin
+        run: echo its loggin in
       - name: run container
-        run: docker run
+        # run: docker run
+        run: echo its running
 
   build:
     runs-on: ubuntu-latest

@@ -12,5 +12,5 @@ def make_client():
 #     return float(env_variable_value)
 
 def say_hello():
-    # this has to be a comment
+    # this has to be a comment d
     return sh.hello_world()

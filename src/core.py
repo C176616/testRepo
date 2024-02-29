@@ -8,7 +8,7 @@ def make_client():
     m_client.send_message("this is going to server")
 
 def check_env_variables():
-    env_variable_value = os.environ(["INITIAL_VALUE"])
+    env_variable_value = os.environ["INITIAL_VALUE"]
     return float(env_variable_value)
 
 def say_hello():
